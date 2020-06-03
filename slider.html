@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sliderTools.js"></script>
+</head>
+<body>
+    <div class="slider"></div>
+    <script>
+        let slider = new SliderTools({
+            el:document.querySelector('.slider')
+        })
+        slider.on('complete',() => {
+            console.log('验证完成!')
+        })
+    </script>
+</body>
+</html>
